@@ -6,7 +6,7 @@
  * REF::
  * [1] "Batch Measurement Error Covariance Estimation for Robust Localization", Watson, R., Taylor, C., Leishman, R., and Gross, J., ION GNSS+ 2018.
 
- * [2] Steinberg, Daniel. "An unsupervised approach to modelling visual data." (2013).
+ * [2] "Robust map optimization using dynamic covariance scaling", Agarwal, P., et. al., 2013 IEEE International Conference on Robotics and Automation
 
  * [3] Watson, Ryan M., and Jason N. Gross. "Evaluation of kinematic precise point positioning convergence with an incremental graph optimizer." Position, Location and Navigation Symposium (PLANS), 2018 IEEE/ION. IEEE, 2018.
 
