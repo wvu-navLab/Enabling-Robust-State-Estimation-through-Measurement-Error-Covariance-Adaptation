@@ -28,12 +28,12 @@ If you utilze this software for an academic purpose, please consider using the f
 
 ```
 @inproceedings{ watson2018evaluation, 
-				 title={Evaluation of kinematic precise point positioning convergence with an incremental graph optimizer},
-				 author={Watson, Ryan M and Gross, Jason N},
-			     booktitle={2018 IEEE/ION Position, Location and Navigation Symposium (PLANS)},
-			     pages={589--596},
-				 year={2018},
-				 organization={IEEE}
+        title={Evaluation of kinematic precise point positioning convergence with an incremental graph optimizer},
+        author={Watson, Ryan M and Gross, Jason N},
+        booktitle={2018 IEEE/ION Position, Location and Navigation Symposium (PLANS)},
+        pages={589--596},
+        year={2018},
+        organization={IEEE}
                }
 ```
 
