@@ -1,12 +1,17 @@
+#!/bin/bash
+CURRDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd && cd .. )"
+DIR="$(dirname "$CURRDIR")"
+
 mkdir -p build
 
-g++ test_gnss_bce.cpp -std=c++11 -lboost_system -lboost_program_options -ltbb -I/localhome/ryan_watson/include  -L/localhome/ryan_watson/lib -lcluster -lgpstk -Wno-deprecated-declarations -lgtsam -I/localhome/ryan_watson/git/ion_gnss_2018/3rdparty/RobustGNSS/gtsam/gtsam/3rdparty/Eigen -fopenmp -o build/test_gnss_bce
+#-------------------------------------------------------------------------------------------------
+# Build example files
+#--------------------------------------------------------------------------------------------------
 
+g++ test_gnss_bce.cpp -std=c++11 -lboost_system -lboost_program_options -ltbb -I"$DIR/include/"  -L"$DIR/lib/" -lcluster -lgpstk -Wno-deprecated-declarations -lgtsam -I"$DIR/3rdparty/Eigen/" -fopenmp -o "$DIR/examples/build/test_gnss_bce"
 
-g++ test_gnss_maxmix.cpp -std=c++11 -lboost_system -lboost_program_options -ltbb -I/localhome/ryan_watson/include  -L/localhome/ryan_watson/lib -lgpstk -Wno-deprecated-declarations -lgtsam -I/localhome/ryan_watson/git/ion_gnss_2018/3rdparty/RobustGNSS/gtsam/gtsam/3rdparty/Eigen -o build/test_gnss_maxmix
+g++ test_gnss_maxmix.cpp -std=c++11 -lboost_system -lboost_program_options -ltbb -I"$DIR/include/"  -L"$DIR/lib/" -lgpstk -Wno-deprecated-declarations -lgtsam -I"$DIR/3rdparty/Eigen/" -o "$DIR/examples/build/test_gnss_maxmix"
 
+g++ test_gnss_dcs.cpp -std=c++11 -lboost_system -lboost_program_options -ltbb -I"$DIR/include/"  -L"$DIR/lib/" -lgpstk -Wno-deprecated-declarations -lgtsam -I"$DIR/3rdparty/Eigen/" -o "$DIR/examples/build/test_gnss_dcs"
 
-g++ test_gnss_dcs.cpp -std=c++11 -lboost_system -lboost_program_options -ltbb -I/localhome/ryan_watson/include  -L/localhome/ryan_watson/lib -lgpstk -Wno-deprecated-declarations -lgtsam -I/localhome/ryan_watson/git/ion_gnss_2018/3rdparty/RobustGNSS/gtsam/gtsam/3rdparty/Eigen -o build/test_gnss_dcs
-
-
-g++ rnx_2_gtsam.cpp -std=c++11 -lboost_system  -lboost_program_options -I/localhome/ryan_watson/include -L/localhome/ryan_watson/lib -lgpstk -Wno-deprecated-declarations -o build/rnx_2_gtsam
+g++ rnx_2_gtsam.cpp -std=c++11 -lboost_system  -lboost_program_options -I"$DIR/include/"  -L"$DIR/lib/"  -lgpstk -Wno-deprecated-declarations -o "$DIR/examples/build/rnx_2_gtsam"
