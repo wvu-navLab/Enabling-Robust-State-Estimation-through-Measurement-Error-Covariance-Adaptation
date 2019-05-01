@@ -63,3 +63,10 @@ then
 fi
 cd "$DIR/examples"
 ./build_examples.sh
+
+
+
+
+echo "\n\n\n\n----------------------------------------------- \n"
+echo " build done. :-) "
+echo "----------------------------------------------- \n\n\n"

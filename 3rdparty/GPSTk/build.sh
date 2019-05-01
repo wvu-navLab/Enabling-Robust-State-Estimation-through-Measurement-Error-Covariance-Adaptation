@@ -4,7 +4,7 @@
 # Purpose: GPSTk build and install script
 #
 #     Automate the use of CMake, SWIG, Doxygen, Sphinx, and distutils
-#     to build and install the GPSTK C++ Library, C++ Applications, 
+#     to build and install the GPSTK C++ Library, C++ Applications,
 #     Python bindings, and documentation.
 #
 # Help:
@@ -42,12 +42,12 @@ OPTIONS:
 
    -i <install_prefix>  Install the build to the given path.
 
-   -j <num_threads>     Number of threads to have make use. Defauts to $num_threads 
+   -j <num_threads>     Number of threads to have make use. Defauts to $num_threads
                         on this host.
 
    -c                   Clean out any files in the build dir prior to running cmake.
 
-   -d                   Build documentation, including generate dependency graphs 
+   -d                   Build documentation, including generate dependency graphs
                         using GraphViz (.DOT and .PDF files).
 
    -e                   GPSTk has several parts: core, ext, and python/swig bindings.
@@ -59,15 +59,15 @@ OPTIONS:
                         If this variable is not set, it will be installed to
                         $user_install_prefix.
 
-   -s                   Install the build into $system_install_prefix and the python 
-                        bindings to the default system location. Make sure the build path 
+   -s                   Install the build into $system_install_prefix and the python
+                        bindings to the default system location. Make sure the build path
                         is writable by root.
 
    -x                   Disable building the python bindings. Default is to build them
                         if -e is specified.
 
    -P  <python_exe>     Python executable used to help determine with python system libraries
-                        will be used when building python extension package. 
+                        will be used when building python extension package.
                         Default=$python_exe
 
    -t                   Build and run tests.
@@ -202,7 +202,7 @@ if [ $build_docs ]; then
     sed -e "s#^INPUT *=.*#INPUT = $sources#" -e "s#gpstk_sources#$sources#g" -e "s#gpstk_doc_dir#$build_root/doc#g" $repo/Doxyfile >$repo/doxyfoo
     sed -e "s#^INPUT *=.*#INPUT = $sources#" -e "s#gpstk_sources#$sources#g" -e "s#gpstk_doc_dir#$build_root/doc#g" $repo/Doxyfile | doxygen - >"$build_root"/Doxygen.log
     tar -czf gpstk_doc_cpp.tgz -C "$build_root"/doc/html .
-    
+
     if [[ -z $exclude_python && $build_ext ]] ; then
         log "Generating swig/python doc files from Doxygen output ..."
         ${python_exe} $repo/swig/docstring_generator.py "$build_root"/doc "$build_root"/swig/doc >"$build_root"/swig_doc.log
@@ -237,7 +237,7 @@ case `uname` in
         run cmake --build . --config Release
         ;;
     *)
-        run cmake $args $repo 
+        run cmake $args $repo
         run make all -j $num_threads
 esac
 
@@ -256,7 +256,7 @@ if [ $test_switch ]; then
       *)
           run ctest -v -j $num_threads
           test_status=$?
-  esac              
+  esac
   unset ignore_failures
 fi
 
@@ -270,7 +270,7 @@ if [ $install ]; then
         ;;
     *)
         run make install -j $num_threads
-    esac  
+    esac
 fi
 
 if [ $build_docs ]; then
@@ -299,25 +299,25 @@ if [ $build_packages ]; then
         *)
             run make package
             run make package_source
-    esac   
+    esac
     if [[ -z $exclude_python && $build_ext ]] ; then
         cd "$build_root"/swig/install_package
         ${python_exe} setup.py sdist --formats=zip,gztar
     fi
 fi
 
-log
-if [ $test_switch ]; then 
-    if [ $test_status == 0 ]; then
-        log "All tests passed!"
-    else
-        log $test_status " test failures."
-    fi
-else
-    log "Tests not run."
-fi
-log "See $build_root/Testing/Temporary/LastTest.log for detailed test log"
-log "See $LOG for detailed build log"
-log
-log "GPSTk build done. :-)"
-log `date`
+# log
+# if [ $test_switch ]; then
+#     if [ $test_status == 0 ]; then
+#         log "All tests passed!"
+#     else
+#         log $test_status " test failures."
+#     fi
+# else
+#     log "Tests not run."
+# fi
+# log "See $build_root/Testing/Temporary/LastTest.log for detailed test log"
+# log "See $LOG for detailed build log"
+# log
+# log "GPSTk build done. :-)"
+# log `date`
