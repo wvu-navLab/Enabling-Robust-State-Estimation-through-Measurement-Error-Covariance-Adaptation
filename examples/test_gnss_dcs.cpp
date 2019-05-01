@@ -1,18 +1,41 @@
 /**
- *  @file   clusterExample.cpp
+ *  @file   test_gnss_dcs.cpp
  *  @author Ryan Watson & Jason Gross
- *  @brief  Factor graph for batch covariance estimation to enable robust GPS processing. This example processes both pseudorange and carrier-phase observations. For more inforomation on how carrier-phase is incorporated, please see [3].
+ *  @brief  Factor graph dynamic covariance scaling to enable robust GPS processing. This example processes both pseudorange and carrier-phase observations. For more inforomation on how carrier-phase is incorporated, please see [3].
 
  * REF::
  * [1] "Batch Measurement Error Covariance Estimation for Robust Localization", Watson, R., Taylor, C., Leishman, R., and Gross, J., ION GNSS+ 2018.
 
- * [2] Steinberg, Daniel. "An unsupervised approach to modelling visual data." (2013).
+ * [2] "Robust map optimization using dynamic covariance scaling", Agarwal, P., et. al., 2013 IEEE International Conference on Robotics and Automation
 
  * [3] Watson, Ryan M., and Jason N. Gross. "Evaluation of kinematic precise point positioning convergence with an incremental graph optimizer." Position, Location and Navigation Symposium (PLANS), 2018 IEEE/ION. IEEE, 2018.
 
  * how to run ::
- * ./clusterExample -h
- * ./clusterExample -i data.gtsam --writeENU --robustIter 1 --percentFaulty 0.3 --dir test
+ * ./test_gnss_dcs -h
+ * ./test_gnss_dcs -i data.gtsam --writeENU --dir test
+
+
+ -----------------------------------------------------------------------------------------------------
+ -----------------------------------------------------------------------------------------------------
+  MIT License
+  Copyright (c) 2019 Ryan M. Watson, Jason N. Gross, Clark N. Taylor, and Robert C. Leishman
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+ -----------------------------------------------------------------------------------------------------
+ -----------------------------------------------------------------------------------------------------
 
  **/
 // GTSAM
