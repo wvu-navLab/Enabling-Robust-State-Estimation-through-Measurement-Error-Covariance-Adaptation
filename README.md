@@ -12,16 +12,18 @@
 
 
 ### 2) Clone repository to local machine  
-* ion_gnss_2018 --> ```` git clone https://github.com/wvu-navLab/Enabling-Robust-State-Estimation-through-Measurement-Error-Covariance-Adaptation.git
-  ````
+````bash
 
+git clone https://github.com/wvu-navLab/Enabling-Robust-State-Estimation-through-Measurement-Error-Covariance-Adaptation.git
+
+````
 
 ### 3) Build
 
 ````bash
 
 cd Enabling-Robust-State-Estimation-through-Measurement-Error-Covariance-Adaptation
-sudo ./build.sh
+./build.sh
 
 ````
 
