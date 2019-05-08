@@ -115,3 +115,8 @@ echo "running BCE 5/6"
 
 echo "running BCE 6/6"
 "$BDIR/test_gnss_bce" -i "$D_HQ_3" --writeECEF --writeENU --writeBias --phaseScale 100 --robustIter 100 --dir "$TDIR/hq/bce/03/"  >  /dev/null
+
+clear
+echo -e "\n\n\n\n ----------------------------------------------- \n"
+echo -e " run done. :-)  All results were written to ../test"
+echo -e  "\n ----------------------------------------------- \n\n\n"

@@ -1,6 +1,6 @@
-truth_d1 = load('/localhome/ryan_watson/test/drives/truth/drive_1.xyz');
-truth_d2 = load('/localhome/ryan_watson/test/drives/truth/drive_2.xyz');
-truth_d3 = load('/localhome/ryan_watson/test/drives/truth/drive_3.xyz');
+truth_d1 = load('drive_1.xyz');
+truth_d2 = load('drive_2.xyz');
+truth_d3 = load('drive_3.xyz');
 
 nom = [856514.1467,-4843013.0689, 4047939.8237];
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

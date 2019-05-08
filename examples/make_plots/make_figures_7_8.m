@@ -320,7 +320,7 @@ ax_width = outerpos(3) - ti(1) - ti(3);
 ax_height = outerpos(4) - ti(2) - ti(4);
 ax.Position = [left bottom ax_width ax_height];
 saveas(gcf, 'range_cov_evolution','png')
-% close;
+close;
 
 figure(f2);
 ax = gca;
@@ -332,4 +332,4 @@ ax_width = outerpos(3) - ti(1) - ti(3);
 ax_height = outerpos(4) - ti(2) - ti(4);
 ax.Position = [left bottom ax_width ax_height];
 saveas(gcf, 'phase_cov_evolution','png')
-% close;
+close;

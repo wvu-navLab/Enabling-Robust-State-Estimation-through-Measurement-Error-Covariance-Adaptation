@@ -1,7 +1,7 @@
 figure('Renderer', 'painters', 'Position', [10 10 900 600]);
 hold on;
 
-res = load('hq/bce/01/iter_0.residuals');
+res = load('../hq/bce/01/iter_0.residuals');
 
 
 S = scatter(res(1:2:end,1),res(1:2:end,2),30,'MarkerEdgeColor','k',...

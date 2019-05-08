@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository contains the software release for "Enabling Robust State Estimation through Measurement Error Covariance Adaptation". The objective of the software release is described through the associated abstract. 
+This repository contains the software release for "Enabling Robust State Estimation through Measurement Error Covariance Adaptation". The objective of the software release is described through the associated abstract.
 <br/>
 <br/>
 
@@ -13,7 +13,7 @@ This repository contains the software release for "Enabling Robust State Estimat
 <br/>
 <br/>
 
-This software benefits from several open-source software packages. 
+This software benefits from several open-source software packages.
 * [*Georgia Tech Smoothing And Mapping (GTSAM)*](https://bitbucket.org/gtborg/gtsam/src/develop/) -- contains factor graph based state estimation algorithms
 	* GTSAM was updated for GNSS signal processing within
 	    *  [*PPP-BayesTree*](https://github.com/wvu-navLab/PPP-BayesTree) -- contains pseudorange and carrier-phase factors
@@ -31,7 +31,7 @@ If you utilze this software for an academic purpose, please consider using the f
 -->
 <!--
 ```
-@article{ watson2019enabling, 
+@article{ watson2019enabling,
         title={Enabling Robust State Estimation through Measurement Error Covariance Adaptation},
         author={Watson, Ryan M and Gross, Jason N and Taylor, Clark N and Leishman, Robert C},
         journal={arXiv preprint},
@@ -72,5 +72,16 @@ cd Enabling-Robust-State-Estimation-through-Measurement-Error-Covariance-Adaptat
 
 ### 4) Test
 ````bash
-./examples/build/test_gnss_bce -i /total/path/to/data/gtsam/drive_1_lq.gtsam --robustIter 100 --writeENU --writeECEF --dir test_1
+cd examples
+chmod +x run_all.sh
+./run_all.sh
 ````
+
+This will write all of the generated results to the *test* directory (*../test*). To duplicate the plots generated within the paper run the following command. (Note: this assumes that you have a matlab alias set. See this [link](https://www.mathworks.com/matlabcentral/answers/98220-how-do-i-create-a-shortcut-or-link-to-matlab)  for instructions. ).
+
+````bash
+chmod +x plot_all.sh
+./plot_all.sh
+````
+
+This will write all of the generated figures to the *test/plots* directory.
