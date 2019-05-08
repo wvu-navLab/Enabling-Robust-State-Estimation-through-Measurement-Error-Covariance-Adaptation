@@ -72,5 +72,7 @@ cd Enabling-Robust-State-Estimation-through-Measurement-Error-Covariance-Adaptat
 
 ### 4) Test
 ````bash
-./examples/build/test_gnss_bce -i /total/path/to/data/gtsam/drive_1_lq.gtsam --robustIter 100 --writeENU --writeECEF --dir test_1
+cd examples
+chmod +x run_all.sh
+./run_all.sh
 ````
