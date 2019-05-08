@@ -14,10 +14,12 @@ This repository contains the software release for "Enabling Robust State Estimat
 <br/>
 
 This software benefits from several open-source software packages. 
-* [*Georgia Tech Smoothing And Mapping (GTSAM)*](https://bitbucket.org/gtborg/gtsam/src/develop/) -- For factor graph based state estimation
-	- Updated for GNSS Signal Processing within [*RobustGNSS*](https://github.com/wvu-navLab/RobustGNSS) and [*PPP-BayesTree*](https://github.com/wvu-navLab/PPP-BayesTree)
-* [*GPS Toolkit (GPSTk)*](http://www.gpstk.org/bin/view/Documentation/WebHome) -- For GNSS observation modeling
-* [*libcluster*](https://github.com/dsteinberg/libcluster) -- For variatinal clustering
+* [*Georgia Tech Smoothing And Mapping (GTSAM)*](https://bitbucket.org/gtborg/gtsam/src/develop/) -- contains factor graph based state estimation algorithms
+	* GTSAM was updated for GNSS signal processing within
+	    *  [*PPP-BayesTree*](https://github.com/wvu-navLab/PPP-BayesTree) -- contains pseudorange and carrier-phase factors
+	    *  [*RobustGNSS*](https://github.com/wvu-navLab/RobustGNSS) -- contains robust GNSS models
+* [*GPS Toolkit (GPSTk)*](http://www.gpstk.org/bin/view/Documentation/WebHome) -- contains GNSS observation modeling tools
+* [*libcluster*](https://github.com/dsteinberg/libcluster) -- contains variatinal clustering algorithms
 
 
 <br/>
