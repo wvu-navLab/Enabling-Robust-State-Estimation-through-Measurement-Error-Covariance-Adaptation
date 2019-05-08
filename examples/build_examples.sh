@@ -14,8 +14,6 @@ BDIR="$CURRDIR/build"
 # Build example files
 #--------------------------------------------------------------------------------------------------
 
-g++ test_gnss_ncad_res.cpp -std=c++11 -I"$EDIR" -L"$LDIR" -Wl,-rpath="$LDIR" -I"$IDIR" -lboost_system -lboost_program_options -ltbb -lcluster -Wno-deprecated-declarations -lgtsam -fopenmp -o "$BDIR/test_gnss_ncad_res"
-
 g++ test_gnss_bce.cpp -std=c++11 -I"$EDIR" -L"$LDIR" -Wl,-rpath="$LDIR" -I"$IDIR" -lboost_system -lboost_program_options -ltbb -lcluster -Wno-deprecated-declarations -lgtsam -fopenmp -o "$BDIR/test_gnss_bce"
 
 g++ test_gnss_maxmix.cpp -std=c++11 -I"$EDIR" -L"$LDIR" -Wl,-rpath="$LDIR" -I"$IDIR" -lboost_system -lboost_program_options -ltbb -Wno-deprecated-declarations -lgtsam -fopenmp -o "$BDIR/test_gnss_maxmix"
