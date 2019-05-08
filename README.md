@@ -29,14 +29,12 @@ This software benefits from several open-source software packages.
 If you utilze this software for an academic purpose, please consider using the following citation:
 
 ```
-@inproceedings{ watson2018evaluation, 
-        title={Evaluation of kinematic precise point positioning convergence with an incremental graph optimizer},
-        author={Watson, Ryan M and Gross, Jason N},
-        booktitle={2018 IEEE/ION Position, Location and Navigation Symposium (PLANS)},
-        pages={589--596},
-        year={2018},
-        organization={IEEE}
-               }
+@article{ watson2019enabling, 
+        title={Enabling Robust State Estimation through Measurement Error Covariance Adaptation},
+        author={Watson, Ryan M and Gross, Jason N and Taylor, Clark N and Leishman, Robert C},
+        journal={arXiv preprint},
+        year={2019}
+       }
 ```
 
 <br/>
