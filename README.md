@@ -26,8 +26,10 @@ This software benefits from several open-source software packages.
 <br/>
 <br/>
 
+<!--
 If you utilze this software for an academic purpose, please consider using the following citation:
-
+-->
+<!--
 ```
 @article{ watson2019enabling, 
         title={Enabling Robust State Estimation through Measurement Error Covariance Adaptation},
@@ -36,8 +38,8 @@ If you utilze this software for an academic purpose, please consider using the f
         year={2019}
        }
 ```
+-->
 
-<br/>
 <br/>
 <br/>
 
