@@ -16,4 +16,5 @@
 <br/>
 
 [1] Olson, Edwin, and Pratik Agarwal. "Inference on networks of mixtures for robust robot mapping." The International Journal of Robotics Research 32.7 (2013): 826-840.
+<br/>
 [2] Agarwal, Pratik, et al. "Robust map optimization using dynamic covariance scaling." 2013 IEEE International Conference on Robotics and Automation. Ieee, 2013.
