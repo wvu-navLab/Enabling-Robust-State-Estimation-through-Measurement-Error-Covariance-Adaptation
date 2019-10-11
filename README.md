@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository contains the software release for "Enabling Robust State Estimation through Measurement Error Covariance Adaptation". The objective of the software release is described through the associated abstract.
+This repository contains the software release for "Enabling Robust State Estimation through Measurement Error Covariance Adaptation". The objective of the software release is described through the associated abstract. To see an incrmental extension of the approach implemented in the repo, see https://github.com/wvu-navLab/ICE
 <br/>
 <br/>
 
