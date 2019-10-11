@@ -26,19 +26,17 @@ This software benefits from several open-source software packages.
 <br/>
 <br/>
 
-<!--
+
 If you utilze this software for an academic purpose, please consider using the following citation:
--->
-<!--
+
 ```
 @article{ watson2019enabling,
         title={Enabling Robust State Estimation through Measurement Error Covariance Adaptation},
         author={Watson, Ryan M and Gross, Jason N and Taylor, Clark N and Leishman, Robert C},
-        journal={arXiv preprint},
+        journal={IEEE Transactions on Aerospace and Electronic Systems},
         year={2019}
        }
 ```
--->
 
 <br/>
 <br/>
